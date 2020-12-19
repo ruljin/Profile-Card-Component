@@ -1,0 +1,79 @@
+* {
+  /* --mobile-breakpoint: 375px;
+  --dekstop-breakpoint: 1440px; */
+  --first-primary-color: hsl(185, 75%, 39%);
+  --second-primary-color: hsl(229, 23%, 23%);
+  --third-primary-color: hsl(227, 10%, 46%);
+  --neutral-color: hsl(0, 0%, 59%);
+  --font-size: 18px;
+}
+
+:root {
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+body {
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  background-color: var(--first-primary-color);
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.background__container {
+  position: fixed;
+}
+
+.background__container--top {
+  left: -210px;
+  top: -215px;
+}
+
+.background__container--bottom {
+  right: -210px;
+  bottom: -215px;
+}
+
+.background__image {
+  opacity: 0.6;
+}
+
+.background__image--top {
+  width: 375px;
+  height: 375px;
+}
+
+.background__image--bottom {
+  width: 375px;
+  height: 445px;
+}
+
+.card {
+  border-radius: 8px;
+  z-index: 1;
+  background-color: #fff;
+}
+
+@media screen and (max-width: 376px) {
+  .card {
+    width: 260px;
+    /* height: 310px; */
+    height: 300px;
+    margin-top: -15px;
+  }
+}
+
+@media screen and (min-width: 377px) {
+  .card {
+    width: 260px;
+    height: 310px;
+  }
+}
