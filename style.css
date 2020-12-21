@@ -15,7 +15,9 @@ body {
   height: 100vh;
   padding: 0;
   margin: 0;
-  background-color: var(--first-primary-color);
+  background: right 49.2vw bottom 40vh no-repeat url(images/bg-pattern-top.svg),
+    45vw 50vh no-repeat url(images/bg-pattern-bottom.svg)
+      var(--first-primary-color);
 }
 
 main {
@@ -56,12 +58,17 @@ main {
 }
 
 .card {
+  width: 260px;
+  min-width: 260px;
+  height: 300px;
+  margin-top: -15px;
   border-radius: 15px;
   z-index: 1;
   background-color: #fff;
 }
 
 .card__header {
+  height: 112px;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   background-image: url("./images/bg-pattern-card.svg");
@@ -83,6 +90,7 @@ main {
 }
 
 .card__body {
+  height: 117px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -129,29 +137,9 @@ main {
   color: var(--third-primary-color);
 }
 
-@media screen and (max-width: 376px) {
-  .card {
-    width: 260px;
-    /* height: 310px; */
-    height: 300px;
-    margin-top: -15px;
-  }
-
-  .card__header {
-    height: 112px;
-  }
-
-  .card__body {
-    height: 117px;
-  }
-
-  .card__footer {
-  }
-}
-
 @media screen and (min-width: 377px) {
   .card {
-    width: 260px;
-    height: 310px;
+    width: 275px;
+    height: 300px;
   }
 }
